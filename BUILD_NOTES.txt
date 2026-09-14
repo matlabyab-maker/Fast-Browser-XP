@@ -1,0 +1,5 @@
+Fast Browser XP - Complete Build Package
+
+This package includes the launcher icon in all required mipmap densities.
+It also includes the app theme resource referenced by AndroidManifest.xml.
+The GitHub Actions workflow builds the debug APK on pushes to main/master and by manual dispatch.

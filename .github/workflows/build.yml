@@ -1,0 +1,46 @@
+name: Build Fast Browser XP
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Install Gradle 8.11.1
+        run: |
+          wget -q https://services.gradle.org/distributions/gradle-8.11.1-bin.zip
+          unzip -q gradle-8.11.1-bin.zip
+          echo "$PWD/gradle-8.11.1/bin" >> "$GITHUB_PATH"
+
+      - name: Check Android project
+        run: |
+          test -f app/src/main/AndroidManifest.xml
+          test -f app/src/main/java/com/fastbrowser/xp/MainActivity.kt
+          test -f app/src/main/res/mipmap/ic_launcher.png
+          test -f app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+
+      - name: Build Debug APK
+        run: gradle assembleDebug --no-daemon
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Fast-Browser-XP-debug
+          path: app/build/outputs/apk/debug/app-debug.apk

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fast Browser XP</string>
+    <string name="address_hint">URL یا جستجو…</string>
+    <string name="home_url">https://chatgpt.com/</string>
+    <string name="chatgpt_url">https://chatgpt.com/</string>
+    <string name="github_token_url">https://github.com/settings/tokens</string>
+    <string name="github_repo_url">https://github.com/matlabyab-maker/Web_Browser_Fast_2</string>
+    <string name="download_started">دانلود شروع شد</string>
+    <string name="download_failed">دانلود ناموفق بود</string>
+    <string name="screenshot_saved">تصویر ذخیره شد: %1$s</string>
+    <string name="page_saved">صفحه ذخیره شد: %1$s</string>
+    <string name="select_on">حالت SELECT فعال است — روی هر بخش صفحه بزنید تا متن پنجره کپی شود.</string>
+    <string name="select_off">حالت SELECT خاموش است.</string>
+    <string name="select_empty">متنی برای کپی پیدا نشد.</string>
+    <string name="select_copied">محتوای پنجره در کلیپ‌بورد کپی شد.</string>
+    <string name="bookmark_saved">نشانک ذخیره شد.</string>
+    <string name="no_bookmarks">هنوز نشانکی ذخیره نشده است.</string>
+    <string name="bookmarks_title">نشانک‌ها</string>
+</resources>

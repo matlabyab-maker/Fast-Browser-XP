@@ -1,0 +1,11 @@
+Fast Browser XP Clone
+
+این ZIP یک پروژه مستقل برای Clone جدید در MGit است.
+
+1) یک پوشه جدید با نام Fast-Browser-XP-Clone بسازید و این فایل‌ها را داخل آن استخراج کنید.
+2) پوشه .git پروژه قبلی را داخل این پروژه کپی نکنید.
+3) در MGit همین پوشه جدید را به‌عنوان یک Repository جداگانه باز/Clone کنید.
+4) سپس Commit و Push انجام دهید.
+5) در GitHub Actions اجرای Build Fast Browser XP را اجرا کنید.
+
+این پروژه عمداً هیچ فایل .git ندارد تا با Repository جدید قاطی نشود.
