@@ -1,18 +1,4 @@
-Fast Browser XP — FINAL BUILD FIX
+Fast Browser XP Clone - FIXED
 
-Based on GitHub Actions log:
-ERROR: app/src/main/AndroidManifest.xml: AAPT: resource mipmap/ic_launcher not found.
-
-Fix included:
-1. Launcher icon files are included in mipmap-mdpi through mipmap-xxxhdpi.
-2. A direct fallback app/src/main/res/mipmap/ic_launcher.png is also included.
-3. Deprecated package= attribute was removed from AndroidManifest.xml.
-4. GitHub Actions uses checkout@v5 and setup-java@v5.
-5. The project remains on the existing package/namespace com.example.windowsbrowser and applicationId com.matlabyab.fastbrowserplus.
-
-User workflow:
-Replace the project contents with this ZIP, preserving the .git folder if replacing inside the existing WBB clone.
-Then MGit: Add/stage -> Commit -> Push.
-Then GitHub Actions -> Build Android APK.
-
-Do not manually add icon files; they are already included.
+The previous Actions build failed because AndroidManifest.xml referenced the removed SettingsActivity and @string/settings_title.
+This version removes the obsolete SettingsActivity entry from the manifest.
