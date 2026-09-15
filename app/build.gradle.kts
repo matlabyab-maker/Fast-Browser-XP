@@ -11,8 +11,8 @@ android {
         applicationId = "com.matlabyab.fastbrowserplus"
         minSdk = 26
         targetSdk = 35
-        versionCode = 2
-        versionName = "1.0.0-xp"
+        versionCode = 3
+        versionName = "1.1.0-xp-plus"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

@@ -13,3 +13,6 @@ Main fixes:
 
 After replacing the project contents in the existing WBB folder:
 MGit -> Commit -> Push -> GitHub Actions -> Build.
+
+
+Fast Browser XP Plus additions: corner page wheel with up/down/reset, hide/show chrome controls, and bottom news ticker with DW source switching and Persian translation action.

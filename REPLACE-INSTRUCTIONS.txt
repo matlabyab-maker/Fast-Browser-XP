@@ -1,11 +1,9 @@
-Fast Browser XP Clone
+FAST BROWSER XP PLUS - REPLACE
 
-این ZIP یک پروژه مستقل برای Clone جدید در MGit است.
-
-1) یک پوشه جدید با نام Fast-Browser-XP-Clone بسازید و این فایل‌ها را داخل آن استخراج کنید.
-2) پوشه .git پروژه قبلی را داخل این پروژه کپی نکنید.
-3) در MGit همین پوشه جدید را به‌عنوان یک Repository جداگانه باز/Clone کنید.
-4) سپس Commit و Push انجام دهید.
-5) در GitHub Actions اجرای Build Fast Browser XP را اجرا کنید.
-
-این پروژه عمداً هیچ فایل .git ندارد تا با Repository جدید قاطی نشود.
+1. Keep the existing .git folder in the MGit project.
+2. Extract the contents of this ZIP over the existing project root.
+3. Replace existing files when Android asks; apply to all.
+4. Do not replace or delete .git.
+5. Delete only folders that are completely empty after replacement.
+6. In MGit: Add/Stage all -> Commit -> Push.
+7. In GitHub Actions, wait for the build to finish and download the APK artifact.

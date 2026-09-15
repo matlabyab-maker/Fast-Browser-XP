@@ -1,0 +1,13 @@
+Fast Browser XP - Downloader Update
+
+Added:
+- In-app Downloads list using Android DownloadManager.
+- Button DOWNLOADS now opens the Fast Browser XP download list first, with a button for the device's system Downloads screen.
+- Long-press an image on a web page to open a download dialog.
+- The image download dialog shows a guessed filename and lets the user rename it before downloading.
+- Long-press a normal HTTP/HTTPS link to download it through the same rename dialog.
+- Downloads keep using Android DownloadManager and the public Downloads folder.
+
+Notes:
+- Images that use blob/data URLs or are protected in a way DownloadManager cannot access may not be directly downloadable.
+- Existing History 250, tabs, upload file picker, SELECT/CONTROL, ENTER, bookmarks, ChatGPT, GitHub, Token, and touch targets are preserved.

@@ -1,0 +1,15 @@
+Fast Browser XP Plus - CONTROL 2 / ENTER update
+
+CONTROL 2:
+- Tap CONTROL 2 to enter region-copy mode.
+- Tap the first point inside the visible WebView, then tap the second point.
+- The rectangle between the two points is rendered as a PNG screenshot.
+- Text and simple HTML from intersecting DOM elements are also placed in the clipboard when available.
+- The copied image is shared through Android FileProvider.
+
+ENTER:
+- ENTER is browser-local.
+- It performs the same navigation/confirmation action as GO for the current address bar.
+- It does not dispatch an Enter key to every webpage control.
+
+Other existing features remain enabled: History 250, tabs, close-tab button, downloads, image long-press download, upload file picker, SELECT, bookmarks, WHEEL, ChatGPT and GitHub shortcuts.
