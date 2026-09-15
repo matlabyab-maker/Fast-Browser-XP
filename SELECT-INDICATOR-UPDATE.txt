@@ -1,0 +1,1 @@
+Fast Browser XP: SELECT/CONTROL status text bar replaced with a sky-blue blinking indicator on the CONTROL icon.

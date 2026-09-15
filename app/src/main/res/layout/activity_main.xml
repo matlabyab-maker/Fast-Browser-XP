@@ -9,9 +9,13 @@
         <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
             android:gravity="center_vertical" android:paddingStart="10dp" android:text="@string/app_name"
             android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="17sp"/>
-        <TextView android:id="@+id/btnControl" android:layout_width="92dp" android:layout_height="36dp"
-            android:layout_margin="4dp" android:gravity="center" android:text="CONTROL"
-            android:textColor="#FFFFFF" android:textStyle="bold" android:background="@drawable/xp_button"/>
+        <FrameLayout android:layout_width="92dp" android:layout_height="36dp" android:layout_margin="4dp">
+            <TextView android:id="@+id/btnControl" android:layout_width="match_parent" android:layout_height="match_parent"
+                android:gravity="center" android:text="CONTROL"
+                android:textColor="#FFFFFF" android:textStyle="bold" android:background="@drawable/xp_button"/>
+            <View android:id="@+id/selectIndicator" android:layout_width="10dp" android:layout_height="10dp"
+                android:layout_gravity="top|end" android:layout_margin="3dp" android:background="#87CEEB" android:visibility="gone"/>
+        </FrameLayout>
     </LinearLayout>
 
     <HorizontalScrollView android:layout_width="match_parent" android:layout_height="44dp" android:fillViewport="false"
@@ -20,12 +24,19 @@
             <TextView android:id="@+id/btnBack" android:layout_width="54dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="←" android:textSize="22sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
             <TextView android:id="@+id/btnForward" android:layout_width="54dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="→" android:textSize="22sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
             <TextView android:id="@+id/btnReload" android:layout_width="54dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="↻" android:textSize="22sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnEnterTop" android:layout_width="62dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="ENTER" android:textSize="10sp" android:textStyle="bold" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
             <TextView android:id="@+id/btnHome" android:layout_width="58dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="HOME" android:textSize="11sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
             <TextView android:id="@+id/btnChatGPT" android:layout_width="58dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="+ AI" android:textSize="12sp" android:textStyle="bold" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
             <TextView android:id="@+id/btnToken" android:layout_width="70dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="TOKEN" android:textSize="10sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
             <TextView android:id="@+id/btnRepo" android:layout_width="70dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="REPO" android:textSize="10sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnHistory" android:layout_width="54dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="HIST" android:textSize="10sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
             <TextView android:id="@+id/btnBookmark" android:layout_width="54dp" android:layout_height="36dp" android:layout_margin="3dp" android:gravity="center" android:text="★" android:textSize="22sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
         </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView android:id="@+id/tabScroller" android:layout_width="match_parent" android:layout_height="40dp" android:fillViewport="false"
+        android:background="#245A8D" android:scrollbars="none">
+        <LinearLayout android:id="@+id/tabBar" android:layout_width="wrap_content" android:layout_height="match_parent" android:orientation="horizontal" android:gravity="center_vertical"/>
     </HorizontalScrollView>
 
     <LinearLayout android:layout_width="match_parent" android:layout_height="48dp" android:orientation="horizontal"
@@ -37,18 +48,18 @@
             android:gravity="center" android:text="GO" android:textStyle="bold" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
     </LinearLayout>
 
-    <TextView android:id="@+id/selectStatus" android:layout_width="match_parent" android:layout_height="26dp"
-        android:gravity="center_vertical" android:paddingStart="8dp" android:text="@string/select_off"
-        android:textSize="12sp" android:textColor="#1F3F5F" android:background="#F2F2F2"/>
 
     <WebView android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
 
     <HorizontalScrollView android:layout_width="match_parent" android:layout_height="46dp" android:fillViewport="false"
         android:background="@drawable/xp_bar" android:scrollbars="none">
         <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:id="@+id/btnNewTab" android:layout_width="82dp" android:layout_height="38dp" android:layout_margin="3dp" android:gravity="center" android:text="+ NEW TAB" android:textSize="10sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnEnterBottom" android:layout_width="62dp" android:layout_height="38dp" android:layout_margin="3dp" android:gravity="center" android:text="ENTER" android:textSize="10sp" android:textStyle="bold" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
             <TextView android:id="@+id/btnSelect" android:layout_width="70dp" android:layout_height="38dp" android:layout_margin="3dp" android:gravity="center" android:text="SELECT" android:textSize="11sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
             <TextView android:id="@+id/btnWheel" android:layout_width="70dp" android:layout_height="38dp" android:layout_margin="3dp" android:gravity="center" android:text="◉ WHEEL" android:textSize="11sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
             <TextView android:id="@+id/btnScreenshot" android:layout_width="70dp" android:layout_height="38dp" android:layout_margin="3dp" android:gravity="center" android:text="SHOT" android:textSize="11sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
+            <TextView android:id="@+id/btnDownloads" android:layout_width="70dp" android:layout_height="38dp" android:layout_margin="3dp" android:gravity="center" android:text="DOWNLOADS" android:textSize="9sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
             <TextView android:id="@+id/btnSavePage" android:layout_width="70dp" android:layout_height="38dp" android:layout_margin="3dp" android:gravity="center" android:text="SAVE" android:textSize="11sp" android:textColor="#FFFFFF" android:background="@drawable/xp_button"/>
         </LinearLayout>
     </HorizontalScrollView>
