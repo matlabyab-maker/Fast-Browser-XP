@@ -461,7 +461,7 @@ class MainActivity : AppCompatActivity() {
         val input = EditText(this).apply {
             setText(guessed)
             selectAll()
-            singleLine = true
+            setSingleLine(true)
             hint = "نام فایل"
             setPadding(24, 8, 24, 8)
         }
