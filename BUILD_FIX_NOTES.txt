@@ -1,4 +1,0 @@
-Fast Browser XP Clone - FIXED
-
-The previous Actions build failed because AndroidManifest.xml referenced the removed SettingsActivity and @string/settings_title.
-This version removes the obsolete SettingsActivity entry from the manifest.

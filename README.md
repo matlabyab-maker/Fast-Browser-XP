@@ -1,18 +1,27 @@
-Fast Browser XP — Clean Build Project
+# Fast Browser Plus
 
-This ZIP is prepared from the user's MGit project and cleaned for GitHub Actions.
+A lightweight Android WebView browser with a classic Windows-style interface.
 
-Main fixes:
-- One MainActivity only: com.fastbrowser.xp.MainActivity
-- Android namespace corrected to com.fastbrowser.xp
-- Launcher icon exists in mipmap/ic_launcher.png and density folders.
-- Old duplicate MainActivity/Settings/VPN source removed.
-- Unused Settings/VPN manifest entries removed.
-- GitHub Actions builds assembleDebug with Gradle 8.11.1.
-- .git is intentionally NOT included; keep the existing MGit repository metadata.
+Included:
+- Back / Forward / Reload / Home
+- URL and web search bar
+- Cookies and DOM storage
+- JavaScript
+- Android DownloadManager for normal file downloads
+- WebView screenshot (JPG)
+- Save Web Archive (MHT)
+- Windows-style toolbar toggle
+- Settings screen
+- GitHub Actions build
+- Debug APK artifact
 
-After replacing the project contents in the existing WBB folder:
-MGit -> Commit -> Push -> GitHub Actions -> Build.
+## Mgit replacement
 
+Replace the files in the repository root with the contents of this project.
+Do not create an extra `WindowsBrowserProject` folder.
 
-Fast Browser XP Plus additions: corner page wheel with up/down/reset, hide/show chrome controls, and bottom news ticker with DW source switching and Persian translation action.
+Then commit and push normally. GitHub Actions will build:
+
+`app/build/outputs/apk/debug/app-debug.apk`
+
+The workflow uploads the APK as the artifact named `Fast-Browser-Plus-debug`.

@@ -1,4 +1,0 @@
-Fast Browser XP icon assets
-
-Launcher icon: user-supplied 1180218-middle.png, converted to Android mipmap densities.
-Additional user-supplied branding images: xp_brand.jpg and xp_mode.jpg.

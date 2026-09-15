@@ -4,15 +4,15 @@ plugins {
 }
 
 android {
-    namespace = "com.fastbrowser.xp"
+    namespace = "com.example.windowsbrowser"
     compileSdk = 35
 
     defaultConfig {
         applicationId = "com.matlabyab.fastbrowserplus"
         minSdk = 26
         targetSdk = 35
-        versionCode = 3
-        versionName = "1.1.0-xp-plus"
+        versionCode = 1
+        versionName = "1.0.0-plus"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

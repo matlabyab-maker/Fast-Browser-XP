@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Fast Browser XP Clone"
+rootProject.name = "Fast Browser Plus"
 include(":app")

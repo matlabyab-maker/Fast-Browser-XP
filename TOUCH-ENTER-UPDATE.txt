@@ -1,9 +1,0 @@
-Fast Browser XP Plus update
-
-1) Button touch areas are expanded by about 18 px around each visible browser button.
-2) ENTER now has two local behaviors:
-   - If the address bar is focused: same as GO.
-   - Otherwise: acts on the currently focused/active web control. Buttons, menu items, links, selects and ARIA buttons are clicked; form/text controls receive an Enter key event.
-3) ENTER does not globally confirm every control on the page.
-
-Replace project contents while preserving the existing .git folder.

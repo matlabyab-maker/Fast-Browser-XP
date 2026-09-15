@@ -1,9 +1,0 @@
-FAST BROWSER XP PLUS - REPLACE
-
-1. Keep the existing .git folder in the MGit project.
-2. Extract the contents of this ZIP over the existing project root.
-3. Replace existing files when Android asks; apply to all.
-4. Do not replace or delete .git.
-5. Delete only folders that are completely empty after replacement.
-6. In MGit: Add/Stage all -> Commit -> Push.
-7. In GitHub Actions, wait for the build to finish and download the APK artifact.

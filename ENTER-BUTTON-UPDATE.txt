@@ -1,1 +1,0 @@
-Fast Browser XP: added ENTER buttons at the top and bottom of the main window. They send Enter to the WebView/focused web element.
